@@ -11,13 +11,21 @@ const assertEqual = function(actual, expected) {
 //returns true or false, based on a perf match
 
 const eqArrays = function(array1, array2) {
+  
+  let count = 0;
   for(let i = 0; i< array1.length; i++){
-    if(array1[i] === array2[i]){
-      return true;
+    
+    if(array1[i] == array2[i]){
+      count++;
     }
-    return false;
   }
+  if(count === array1.length) {
+    return true;
+  }
+  return false;
 }
 
 assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true);
 assertEqual(eqArrays([1, 2, 4], [1, 2, 3]), false);
+assertEqual(eqArrays([1, 2, 4], [1, 2, 3]), true);
+assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), false);
