@@ -34,7 +34,7 @@ const middle = function(array) {
     if (array.length % 2 === 0) { //even, return array with 2
       while (array.length > 2) {
         array.splice(0,1);
-        array.splice(array.length - 1, array.length - 1);
+        array.splice(array.length - 1, 1);
       }return array;
     }
     if (array.length % 2 !== 0) { //odd, return array with 1
