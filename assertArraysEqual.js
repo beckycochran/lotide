@@ -21,6 +21,3 @@ const assertArraysEqual = function(array1, array2) {
     console.log("Assertion Failed! At least one array values does not match!");
   }
 }
-
-assertArraysEqual([1,2],[1,2]);
-assertArraysEqual([1,2],[1,3]);
