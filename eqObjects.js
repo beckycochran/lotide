@@ -23,6 +23,10 @@ const eqArrays = function(array1, array2) {
   return false;
 }
 
+//NEEDDDDDD TOOOO FIXXX
+//
+//
+//
 
 const eqObjects = function(obj1, obj2) {
   const arr1 = Object.keys(obj1);
@@ -49,6 +53,9 @@ const eqObjects = function(obj1, obj2) {
       return true; 
   }return false;
 }
+//
+//
+//
 
       
 
