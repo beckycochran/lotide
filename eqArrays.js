@@ -1,4 +1,3 @@
-
 //fucntion eqArrays
 //takes in two arrays
 //returns true or false, based on a perf match
