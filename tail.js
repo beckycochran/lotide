@@ -1,27 +1,9 @@
-const assertEqual = function(actual, expected) {
-  if (actual === expected) {
-    console.log(`Assertion Passed! ${actual} equals ${expected}!`);
-  } else {
-    console.log(`Assertion Failed! ${actual} doesn't equal ${expected}!`);
-  }
-};
+const assertEqual = require('./assertEqual');
+
 
 const tail = function(array) {
   let newArr = array.slice(1,(array.length));
   return newArr;
 };
 
-let a = ["The","dog", "hopped", "over"];
-
-console.log(tail(a));
-
-
-const result = tail(["Hello", "Lighthouse", "Labs"]);
-assertEqual(result.length, 2); // ensure we get back two elements
-assertEqual(result[0], "Lighthouse"); // ensure first element is "Lighthouse"
-assertEqual(result[1], "Labs"); // ensure second element is "Labs"
-
-
-const words = ["Yo Yo", "Lighthouse", "Labs"];
-tail(words); // no need to capture the return value since we are not checking it
-assertEqual(words.length, 3); // original array should still have 3 elements!
+module.exports = tail;
